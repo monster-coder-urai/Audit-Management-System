@@ -1,0 +1,17 @@
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\bin\Debug\net7.0\AMS.Plugins.InMemory.deps.json
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\bin\Debug\net7.0\AMS.Plugins.InMemory.dll
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\bin\Debug\net7.0\AMS.Plugins.InMemory.pdb
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\bin\Debug\net7.0\AMS.CoreBusiness.dll
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\bin\Debug\net7.0\AMS.UseCases.dll
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\bin\Debug\net7.0\AMS.UseCases.pdb
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\bin\Debug\net7.0\AMS.CoreBusiness.pdb
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\obj\Debug\net7.0\AMS.Plugins.InMemory.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\obj\Debug\net7.0\AMS.Plugins.InMemory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\obj\Debug\net7.0\AMS.Plugins.InMemory.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\obj\Debug\net7.0\AMS.Plugins.InMemory.AssemblyInfo.cs
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\obj\Debug\net7.0\AMS.Plugins.InMemory.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\obj\Debug\net7.0\AMS.Plugins.InMemory.csproj.CopyComplete
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\obj\Debug\net7.0\AMS.Plugins.InMemory.dll
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\obj\Debug\net7.0\refint\AMS.Plugins.InMemory.dll
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\obj\Debug\net7.0\AMS.Plugins.InMemory.pdb
+C:\Users\HP\source\repos\AMS\AMS.Plugins\AMS.Plugins.InMemory\obj\Debug\net7.0\ref\AMS.Plugins.InMemory.dll

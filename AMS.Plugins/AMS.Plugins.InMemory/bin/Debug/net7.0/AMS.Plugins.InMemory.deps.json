@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "AMS.Plugins.InMemory/1.0.0": {
+        "dependencies": {
+          "AMS.UseCases": "1.0.0"
+        },
+        "runtime": {
+          "AMS.Plugins.InMemory.dll": {}
+        }
+      },
+      "AMS.CoreBusiness/1.0.0": {
+        "runtime": {
+          "AMS.CoreBusiness.dll": {}
+        }
+      },
+      "AMS.UseCases/1.0.0": {
+        "dependencies": {
+          "AMS.CoreBusiness": "1.0.0"
+        },
+        "runtime": {
+          "AMS.UseCases.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AMS.Plugins.InMemory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AMS.CoreBusiness/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AMS.UseCases/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
