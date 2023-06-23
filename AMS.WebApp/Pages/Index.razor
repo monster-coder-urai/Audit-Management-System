@@ -1,0 +1,21 @@
+﻿@page "/"
+
+@inject IViewTransactionsByBranchNameUseCase ViewTransactionsByBranchNameUseCase
+
+<PageTitle>Test Page</PageTitle>
+
+<ul>
+    @foreach (var tran in _transactions)
+    {
+        <li>@tran.BranchId</li>
+    }
+</ul>
+
+@code {
+    private List<BankTransaction> _transactions = new List<BankTransaction>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _transactions = (await ViewTransactionsByBranchNameUseCase.ExecuteAsync()).ToList();
+    }
+}

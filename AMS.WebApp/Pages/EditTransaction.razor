@@ -1,0 +1,77 @@
+﻿@page "/edittransaction/{TranId:int}"
+
+@inject IViewTransactionsByIdUseCase ViewTransactionsByIdUseCase
+@inject IEditTransactionUseCase EditTransactionUseCase
+@inject NavigationManager NavigationManager
+
+<h3>Edit Transaction</h3>
+<br />
+<EditForm Model="transaction" OnValidSubmit="SaveTransaction">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <ValidationSummary></ValidationSummary>
+
+    <div class="form-group">
+        <label for="id"> Branch Id</label>
+        <InputNumber id="id"
+                     @bind-Value="transaction.BranchId"
+                     class="form-control"
+                     disabled=true>
+        </InputNumber>
+    </div>
+
+    <div class="form-group">
+        <label for="name">Branch Name</label>
+        <InputText id="name"
+                   @bind-Value="transaction.BranchName"
+                   class="form-control"
+                   disabled=true>
+        </InputText>
+    </div>
+
+    <div class="form-group">
+        <label for="amount">Amount</label>
+        <InputNumber id="amount"
+                     @bind-Value="transaction.Amount"
+                     class="form-control">
+        </InputNumber>
+    </div>
+
+    <div class="form-group">
+        <label for="date">Date</label>
+        <InputDate id="date"
+                   @bind-Value="transaction.Date"
+                   class="form-control"
+                   disabled=true>
+        </InputDate>
+    </div> 
+    <br />
+    <button type="submit" class="btn btn-primary">Save</button>
+    <button type="button" class="btn btn-primary" @onclick="Cancel">Cancel</button>
+</EditForm>
+
+
+
+@code {
+
+    [Parameter]
+    public int TranId { get; set; }
+
+    private BankTransaction transaction = new BankTransaction();
+
+    protected override async Task OnParametersSetAsync()
+    {
+        this.transaction = await ViewTransactionsByIdUseCase.ExecuteAsync(this.TranId);
+    }
+
+    private async Task SaveTransaction()
+    {
+        await EditTransactionUseCase.ExecuteAsync(transaction);
+        NavigationManager.NavigateTo("/transactions");
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/transactions");
+    }
+
+}

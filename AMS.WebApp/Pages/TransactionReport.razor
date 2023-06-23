@@ -1,0 +1,84 @@
+﻿@page "/transactionreport"
+
+@using AMS.UseCases.Reports;
+
+@inject ISearchTransactionsUseCase SearchTransactionsUseCase
+@inject IJSRuntime JSRuntime
+<h3>Transaction Report</h3>
+
+<br />
+
+<div id="printarea">
+    <div class="row">
+        <div class="col">
+            <label for="name">Branch Name</label>
+            <input type="text" id="name" class="form-control" @bind-value="branchName" />
+        </div>
+        <div class="col">
+            <label for="df">Date From</label>
+            <input type="date" id="df" class="form-control" @bind-value="dateFrom" />
+        </div>
+        <div class="col">
+            <label for="dt">Date To</label>
+            <input type="date" id="dt" class="form-control" @bind-value="dateTo" />
+        </div>
+        <div class="col">
+            <label>&nbsp;</label>
+            <button type="button" class="btn btn-primary form-control" @onclick="SearchTransaction">Search</button>
+        </div>
+        <div class="col">
+            <label>&nbsp;</label>
+            <button type="button" class="btn btn-primary form-control" @onclick="PrintReport">Print</button>
+        </div>
+    </div>
+    <br />
+    @if (transactions != null)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>BranchId</th>
+                    <th>BranchName</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var it in transactions)
+                {
+                    <tr>
+
+                        <td>@it.BranchId</td>
+                        <td>@it.BranchName</td>
+                        <td>@it.Amount</td>
+                        <td>@it.Date.ToString("MM/dd/yyyy")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+@code {
+    private string branchName = string.Empty;
+    private DateTime? dateFrom;
+    private DateTime? dateTo;
+
+    private IEnumerable<BankTransaction>? transactions;
+
+
+    private async Task SearchTransaction()
+    {
+
+        transactions = await SearchTransactionsUseCase.ExecuteAsync(
+            branchName,
+            dateFrom,
+            dateTo
+        );
+    }
+
+    private void PrintReport()
+    {
+        JSRuntime.InvokeVoidAsync("print");
+    }
+
+}

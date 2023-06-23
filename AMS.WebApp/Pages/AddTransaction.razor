@@ -1,0 +1,70 @@
+﻿@page "/addtransaction"
+@inject NavigationManager NavigationManager
+@inject IAddTransactionUseCase AddTransactionUseCase
+
+<h3>Add Transaction</h3>
+<br />
+
+<EditForm Model="transaction" OnValidSubmit="SaveTransaction">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <ValidationSummary></ValidationSummary>
+
+    <div class="form-group">
+        <label for="id"> Branch Id</label>
+        <InputNumber id="id"
+                     @bind-Value="transaction.BranchId"
+                     class="form-control">
+        </InputNumber>
+    </div>
+
+    <div class="form-group">
+        <label for="name">Branch Name</label>
+        <InputText id="name"
+                   @bind-Value="transaction.BranchName"
+                   class="form-control">
+        </InputText>
+    </div>
+
+    <div class="form-group">
+        <label for="amount">Amount</label>
+        <InputNumber id="amount"
+                     @bind-Value="transaction.Amount"
+                     class="form-control">
+        </InputNumber>
+    </div>
+
+    <div class="form-group">
+        <label for="date">Date</label>
+        <InputDate id="date"
+                   @bind-Value="transaction.Date"
+                   class="form-control">
+        </InputDate>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Save</button>
+    <button type="button" class="btn btn-primary" @onclick="Cancel">Cancel</button>
+</EditForm>
+
+@code {
+    private AuthenticationState? authenticationState;
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationStateTask { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(authenticationStateTask != null)
+        authenticationState = await authenticationStateTask;   
+    }
+    private BankTransaction transaction = new BankTransaction();
+
+    private async Task SaveTransaction()
+    {
+        await AddTransactionUseCase.ExecuteAsync(transaction);
+        NavigationManager.NavigateTo("/");
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+}

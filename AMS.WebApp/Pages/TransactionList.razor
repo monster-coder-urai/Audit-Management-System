@@ -1,0 +1,20 @@
+﻿@page "/transactions"
+
+<h3>Transaction List</h3>
+<br />
+
+<SearchBranchComponent OnSearchTransaction="OnTransactionSearch"> </SearchBranchComponent>
+
+<br />
+
+<TransactionListComponent SearchTerm="@searchTerm"> </TransactionListComponent>
+
+
+@code {
+    private string searchTerm = string.Empty;
+
+    private void OnTransactionSearch(string searchTerm)
+    {
+        this.searchTerm = searchTerm;
+    }
+}
