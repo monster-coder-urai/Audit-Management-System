@@ -1,0 +1,12 @@
+C:\Users\HP\source\repos\AMS\AMS.CoreBusiness\bin\Debug\net7.0\AMS.CoreBusiness.deps.json
+C:\Users\HP\source\repos\AMS\AMS.CoreBusiness\bin\Debug\net7.0\AMS.CoreBusiness.dll
+C:\Users\HP\source\repos\AMS\AMS.CoreBusiness\bin\Debug\net7.0\AMS.CoreBusiness.pdb
+C:\Users\HP\source\repos\AMS\AMS.CoreBusiness\obj\Debug\net7.0\AMS.CoreBusiness.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\AMS\AMS.CoreBusiness\obj\Debug\net7.0\AMS.CoreBusiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\AMS\AMS.CoreBusiness\obj\Debug\net7.0\AMS.CoreBusiness.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\AMS\AMS.CoreBusiness\obj\Debug\net7.0\AMS.CoreBusiness.AssemblyInfo.cs
+C:\Users\HP\source\repos\AMS\AMS.CoreBusiness\obj\Debug\net7.0\AMS.CoreBusiness.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\AMS\AMS.CoreBusiness\obj\Debug\net7.0\AMS.CoreBusiness.dll
+C:\Users\HP\source\repos\AMS\AMS.CoreBusiness\obj\Debug\net7.0\refint\AMS.CoreBusiness.dll
+C:\Users\HP\source\repos\AMS\AMS.CoreBusiness\obj\Debug\net7.0\AMS.CoreBusiness.pdb
+C:\Users\HP\source\repos\AMS\AMS.CoreBusiness\obj\Debug\net7.0\ref\AMS.CoreBusiness.dll
