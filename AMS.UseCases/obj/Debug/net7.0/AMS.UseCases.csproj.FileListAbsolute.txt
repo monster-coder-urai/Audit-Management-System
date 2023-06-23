@@ -1,0 +1,15 @@
+C:\Users\HP\source\repos\AMS\AMS.UseCases\bin\Debug\net7.0\AMS.UseCases.deps.json
+C:\Users\HP\source\repos\AMS\AMS.UseCases\bin\Debug\net7.0\AMS.UseCases.dll
+C:\Users\HP\source\repos\AMS\AMS.UseCases\bin\Debug\net7.0\AMS.UseCases.pdb
+C:\Users\HP\source\repos\AMS\AMS.UseCases\bin\Debug\net7.0\AMS.CoreBusiness.dll
+C:\Users\HP\source\repos\AMS\AMS.UseCases\bin\Debug\net7.0\AMS.CoreBusiness.pdb
+C:\Users\HP\source\repos\AMS\AMS.UseCases\obj\Debug\net7.0\AMS.UseCases.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\AMS\AMS.UseCases\obj\Debug\net7.0\AMS.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\AMS\AMS.UseCases\obj\Debug\net7.0\AMS.UseCases.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\AMS\AMS.UseCases\obj\Debug\net7.0\AMS.UseCases.AssemblyInfo.cs
+C:\Users\HP\source\repos\AMS\AMS.UseCases\obj\Debug\net7.0\AMS.UseCases.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\AMS\AMS.UseCases\obj\Debug\net7.0\AMS.UseCases.csproj.CopyComplete
+C:\Users\HP\source\repos\AMS\AMS.UseCases\obj\Debug\net7.0\AMS.UseCases.dll
+C:\Users\HP\source\repos\AMS\AMS.UseCases\obj\Debug\net7.0\refint\AMS.UseCases.dll
+C:\Users\HP\source\repos\AMS\AMS.UseCases\obj\Debug\net7.0\AMS.UseCases.pdb
+C:\Users\HP\source\repos\AMS\AMS.UseCases\obj\Debug\net7.0\ref\AMS.UseCases.dll

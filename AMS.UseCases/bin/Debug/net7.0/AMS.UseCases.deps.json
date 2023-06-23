@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "AMS.UseCases/1.0.0": {
+        "dependencies": {
+          "AMS.CoreBusiness": "1.0.0"
+        },
+        "runtime": {
+          "AMS.UseCases.dll": {}
+        }
+      },
+      "AMS.CoreBusiness/1.0.0": {
+        "runtime": {
+          "AMS.CoreBusiness.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AMS.UseCases/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AMS.CoreBusiness/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
