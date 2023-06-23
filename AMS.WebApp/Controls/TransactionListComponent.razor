@@ -1,0 +1,30 @@
+﻿@inject IViewTransactionsByBranchNameUseCase ViewTransactionsByBranchNameUseCase
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>TransactionId</th>
+            <th>BranchId</th>
+            <th>BranchName</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+       <TransactionListItemComponent Transactions="listTransactions"> </TransactionListItemComponent>
+    </tbody>
+</table>
+
+@code {
+    private List<BankTransaction> listTransactions = new List<BankTransaction>();
+
+    [Parameter]
+    public string SearchTerm { get; set; } = string.Empty;
+
+    protected override async Task OnParametersSetAsync()
+    {
+
+        listTransactions = (await ViewTransactionsByBranchNameUseCase.ExecuteAsync(this.SearchTerm)).ToList();
+    }
+}

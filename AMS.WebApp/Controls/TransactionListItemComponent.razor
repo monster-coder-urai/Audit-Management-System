@@ -1,0 +1,32 @@
+﻿@inject NavigationManager NavigationManager
+
+
+@if(Transactions != null && Transactions.Count>0)
+{
+    foreach (var tran in Transactions)
+    {
+        <tr>
+            <td>@tran.TransactionId</td>
+            <td>@tran.BranchId</td>
+            <td>@tran.BranchName</td>
+            <td>@tran.Amount.ToString("c")</td>
+            <td>@tran.Date</td>
+            <td>
+                <button type="button"
+                        class="btn-light "
+                        @onclick=@(()=>EditTransaction(tran.TransactionId))>Edit</button>
+            </td>
+        </tr>
+    }
+} 
+
+@code {
+
+    [Parameter]
+    public List<BankTransaction> Transactions { get; set; } = new List<BankTransaction>();
+
+    private void EditTransaction(int transactionId)
+    {
+        NavigationManager.NavigateTo($"/edittransaction/{transactionId}");
+    }
+}
